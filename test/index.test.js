@@ -7,13 +7,13 @@
 // retuns the total ammout formated as a currency string
 // calculation should be -> amount + (amount * vat / 100) ) + tip 
 
-const calculateBill = require('../index');
+const calculateBill = require('../index.js');
 test("calculateBill is a function", () => {
 
   expect(calculateBill).toBeInstanceOf(Function);
 });
 
-test('it returns a string ', () => {
+test('it returns a string', () => {
     const result = calculateBill();
 
     expect(typeof result).toBe('string');
